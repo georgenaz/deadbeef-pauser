@@ -20,7 +20,6 @@ SERVICES = [
 
 def screensaver_active_changed( is_active ):
     if is_active:
-        print("Called screensaver_active_changed().\n")
         os.system('if [[ `pidof deadbeef` ]]; then deadbeef --pause 2>/dev/null; fi')
 
 
